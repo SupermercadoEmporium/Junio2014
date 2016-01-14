@@ -6,12 +6,12 @@ shinyServer(function(input, output) {
 
   output$junio<-renderPrint({
     y<-input$select
-    paste(y,round(a_matrix_Junio[y], digits=4))
+    paste(y,round(a_matrix_Junio[y,y], digits=4))
   })
   
   output$junio2<-renderPrint({
     y<-input$select2
-    paste(y,round(a_matrix_Junio[y], digits=4))
+    paste(y,round(a_matrix_Junio[y,y], digits=4))
   })
   
   output$confidencejunio<-renderPrint({
